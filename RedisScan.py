@@ -27,7 +27,7 @@ if __name__ == '__main__':
         if args.port:
             redis(args.target,args.port)
         else:
-            port = 6379
+            port = '6379'
             redis(args.target,port)
     elif args.file:
         with open(args.file,'r+') as f:
